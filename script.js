@@ -32,6 +32,7 @@ const handleSubmit = (e) => {
 	formData.append('timestamp', new Date().toLocaleString());
 	const formProps = Object.fromEntries(formData);
 	localStorage.setItem('form', JSON.stringify(formProps));
+	location.href = '/collected_data.html';
 };
 
 // Numbers only for phone input
