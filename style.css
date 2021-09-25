@@ -78,7 +78,7 @@
 /* products */
 .image {
 	overflow: hidden;
-	max-height: 40vh;
+	max-height: 60vh;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -86,7 +86,7 @@
 }
 
 .image img {
-	opacity: 80%;
+	opacity: 90%;
 }
 
 .image h3 {
@@ -109,4 +109,11 @@
 	min-height: 100%;
 	object-fit: cover;
 	object-position: center;
+}
+
+/* location */
+iframe {
+	width: 100%;
+	height: 60vh;
+	border: 0;
 }
