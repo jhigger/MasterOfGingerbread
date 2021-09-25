@@ -10,23 +10,39 @@
 
 <body>
     <h1>Local Storage</h1>
-    <div>
-        <h2>Form</h2>
-        <hr>
-        <h4>Name: <span id="name"></span></h4>
-        <h4>Email: <span id="email"></span></h4>
-        <h4>Phone Number: <span id="phone"></span></h4>
-        <h4>Message: <span id="message"></span></h4>
-        <h4>Timestamp: <span id="timestamp"></span></h4>
+    <button onclick="getForm()">Show</button>
+    <button onclick="deleteForm()">Delete</button>
+    <div id="form">
     </div>
     <script>
-        const form = JSON.parse(localStorage.getItem("form"))
+        const getForm = () => {
+            const storageItem = localStorage.getItem('form')
 
-        const ids = ['name', 'email', 'phone', 'message', 'timestamp']
-        let i = 0
-        for (const key in form) {
-            document.getElementById(ids[i]).innerText = form[key]
-            i++
+            if (storageItem !== null) {
+                document.getElementById('form').innerHTML = `
+                    <h2>Form</h2>
+                    <hr>
+                    <h4>Name: <span id="name"></span></h4>
+                    <h4>Email: <span id="email"></span></h4>
+                    <h4>Phone Number: <span id="phone"></span></h4>
+                    <h4>Message: <span id="message"></span></h4>
+                    <h4>Timestamp: <span id="timestamp"></span></h4>
+                `
+                const form = JSON.parse(storageItem)
+                const ids = ['name', 'email', 'phone', 'message', 'timestamp']
+                let i = 0
+                for (const key in form) {
+                    document.getElementById(ids[i]).innerText = form[key]
+                    i++
+                }
+            } else {
+                document.getElementById('form').innerHTML = '<h2>Empty</h2>'
+            }
+        }
+
+        const deleteForm = () => {
+            localStorage.removeItem('form')
+            getForm()
         }
     </script>
 </body>
