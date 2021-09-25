@@ -1,0 +1,112 @@
+/* index */
+.btn-round {
+	border-radius: 10rem;
+}
+
+.nav-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	min-width: 5vw;
+	height: 100%;
+	object-fit: cover;
+}
+
+.bestsellers {
+	min-height: 20vw;
+}
+
+.bestsellers .carousel-item {
+	min-width: 30ch;
+}
+
+.bestsellers .carousel-item .card {
+	width: 100%;
+}
+
+.testimonials {
+	height: 20vw;
+}
+
+.testimonials .carousel-item {
+	min-width: 75ch;
+	display: flex;
+	justify-content: center;
+	height: 0;
+}
+
+.carousel-item .card-panel {
+	max-height: 12em;
+}
+
+.testimonial-image img {
+	margin: 0 1em;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.carousel-slider #panel1 {
+	background-image: url('https://via.placeholder.com/400x400?text=Image');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.carousel-slider #panel2 {
+	background-image: url('https://via.placeholder.com/400x400?text=Image');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.carousel-slider #panel3 {
+	background-image: url('https://via.placeholder.com/400x400?text=Image');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.carousel-slider #panel4 {
+	background-image: url('https://via.placeholder.com/400x400?text=Image');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* products */
+.image {
+	overflow: hidden;
+	max-height: 40vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image img {
+	opacity: 80%;
+}
+
+.image h3 {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-image {
+	overflow: hidden;
+	height: 30ex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-image img {
+	width: auto;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
