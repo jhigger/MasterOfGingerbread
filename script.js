@@ -14,7 +14,7 @@ const testimonials = document.querySelector('.testimonials');
 M.Carousel.init(testimonials, {numVisible: 3});
 // Autoplay function for carousel
 // Forward carousel every 5 seconds
-const interval = 500000;
+const interval = 5000;
 setTimeout(
 	(autoplay = () => {
 		M.Carousel.getInstance(slider).next();
