@@ -76,7 +76,7 @@
 }
 
 /* products */
-.image {
+.hero-image {
 	overflow: hidden;
 	max-height: 60vh;
 	position: relative;
@@ -85,11 +85,11 @@
 	justify-content: center;
 }
 
-.image img {
+.hero-image img {
 	opacity: 90%;
 }
 
-.image .image-text {
+.hero-image .hero-image-text {
 	position: absolute;
 	display: flex;
 	align-items: center;
