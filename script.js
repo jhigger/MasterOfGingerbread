@@ -42,3 +42,7 @@ const onlyNumberKey = (e) => {
 	if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) return false;
 	return true;
 };
+
+// Material Boxed
+const materialBoxed = document.querySelectorAll('.materialboxed');
+M.Materialbox.init(materialBoxed, {});
