@@ -117,3 +117,11 @@ iframe {
 	height: 60vh;
 	border: 0;
 }
+
+/* About */
+.about-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
