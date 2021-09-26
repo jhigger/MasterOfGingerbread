@@ -89,7 +89,7 @@
 	opacity: 90%;
 }
 
-.image h3 {
+.image .image-text {
 	position: absolute;
 	display: flex;
 	align-items: center;
