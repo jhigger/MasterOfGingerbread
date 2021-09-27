@@ -30,7 +30,8 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <a id="logo-container" href="/" class="brand-logo logo center">
-                    <img src='https://via.placeholder.com/200x100?text=Logo' alt="logo" loading="lazy" width="100%" height="100%">
+                    <img src='https://via.placeholder.com/200x100?text=Logo' alt="logo" loading="lazy" width="100%"
+                        height="100%">
                 </a>
                 <ul class="right hide-on-med-and-down nav-link">
                     <li><a href="location.html">Location</a></li>
@@ -50,8 +51,53 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
 
+    <!-- Image -->
+    <section class="header-image red">
+        <img width="100%" src="https://via.placeholder.com/400x400?text=Image" alt="background" loading="lazy">
+        <div class="header-image-text ">
+            <div class="card-panel red white-text center ">
+                <i class="material-icons">email</i>
+                <h5>Contact Us</h5>
+                <p>mastergingerbreadman@gmail.com</p>
+                <p>123-4567-890</p>
+            </div>
+        </div>
+    </section>
+
     <main>
-        <!-- START HERE -->
+        <!-- Form -->
+        <section class="section section-contact">
+            <div class="container">
+                <form id="form" class="card-panel grey lighten-4 right-align" onsubmit="handleSubmit(event)">
+                    <h5 class="center">Send us your feedback</h5>
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="input-field">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="tel" id="phone" name="phone" required
+                                    onkeypress="return onlyNumberKey(event)">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="input-field">
+                                <textarea class="materialize-textarea bordered" id="message" name="message"
+                                    required></textarea>
+                                <label id="bordered-label" for="message">Message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
