@@ -111,6 +111,49 @@
 	object-position: center;
 }
 
+/* Testimonials */
+.review {
+	border-radius: 20px;
+	padding: 0 !important;
+	overflow: hidden;
+}
+
+.review-text {
+	clip-path: polygon(
+		0% 0%,
+		100% 0%,
+		100% 90%,
+		60% 90%,
+		50% 100%,
+		40% 90%,
+		0 90%
+	);
+	min-height: 20ch;
+	margin-bottom: 1rem;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.grid {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 601px) {
+	.grid .grid-item.m4 {
+		width: 30%;
+		margin-left: auto;
+		left: auto;
+		right: auto;
+	}
+
+	.grid {
+		margin-left: 2.5vw;
+	}
+}
+
 /* location */
 iframe {
 	width: 100%;

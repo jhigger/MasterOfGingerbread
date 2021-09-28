@@ -46,3 +46,11 @@ const onlyNumberKey = (e) => {
 // Material Boxed
 const materialBoxed = document.querySelectorAll('.materialboxed');
 M.Materialbox.init(materialBoxed, {});
+
+// Masonry
+const grid = document.querySelector('.grid');
+const masonry = new Masonry(grid, {
+	// options
+	itemSelector: '.grid-item',
+	gutter: 26
+});
