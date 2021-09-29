@@ -48,6 +48,7 @@
 	height: 100px;
 	object-fit: cover;
 	object-position: center;
+	border: 1px solid lightgrey;
 }
 
 .carousel-slider #panel1 {
